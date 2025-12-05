@@ -25,6 +25,7 @@ fn main() -> Result<()> {
             "-D",
             "clippy::pedantic",
         ],
+        &["cargo", "fmt"],
     ];
 
     ensure!(is_git_repo(Path::new(".")), "Not a git repository!");
